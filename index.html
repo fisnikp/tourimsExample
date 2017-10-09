@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>Tourism Example</title>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li class="brand"><span>Your</span>Vacation</li>
+                <li class="menu"><a href="#contact">Contact</a></li>
+                <li class="menu"><a href="#section3">About</a> </li>
+                <li class="menu"><a href="">Home</a></li>
+            </ul>
+        </nav> 
+     <header id="header">      
+        <div class="showcase">
+            <h1 id="welcome">Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#section-1"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+    </header>
+    <div id="section-1" class="container">
+        <div class="boxes box-1">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>   
+            <h3>Simple</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quas, atque illo ipsa repellat, explicabo ratione enim praesentium maxime distinctio necessitatibus iure, omnis dignissimos eaque ducimus. Rem blanditiis sunt quam.</p>
+        </div>
+        
+         <div class="boxes box-2">
+            <i class="fa fa-commenting" aria-hidden="true"></i>  
+            <h3>Medium</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quas, atque illo ipsa repellat, explicabo ratione enim praesentium maxime distinctio necessitatibus iure, omnis dignissimos eaque ducimus. Rem blanditiis sunt quam.</p>
+        </div>
+        
+         <div class="boxes box-3">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>   
+            <h3>Premium</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quas, atque illo ipsa repellat, explicabo ratione enim praesentium maxime distinctio necessitatibus iure, omnis dignissimos eaque ducimus. Rem blanditiis sunt quam.</p>
+        </div>
+    </div>
+    <div class="section-2">
+        <h1 id="offers">Check Out Last offers</h1>
+    </div>
+    <div class="section-3" id="section3">
+            <div class="boxes2 box-bottom-1">
+               <div class="" id="box1">
+                    <h3>Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, cumque! Sint odio quasi dolores veritatis quae possimus tempore explicabo optio. Quisquam quas reprehenderit repellendus error illo doloremque molestiae, nihil, aliquid commodi, animi incidunt enim officiis. Minima voluptatibus est optio magnam!</p>
+                </div>
+            </div>
+             <div class="boxes2 box-bottom-2">
+               <div id="box2">
+                <h3>Title 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, cumque! Sint odio quasi dolores veritatis quae possimus tempore explicabo optio. Quisquam quas reprehenderit repellendus error illo doloremque molestiae, nihil, aliquid commodi, animi incidunt enim officiis. Minima voluptatibus est optio magnam!</p>
+              </div>    
+            </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <form action="">
+           <div class="form">
+                <label for="">Name</label><br>
+                <input type="text"><br>
+                <br>
+                <label for="">Email</label><br>
+                <input type="email"><br>
+                <br>
+                <label for="">Message</label><br>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+                <a href="#" class="btn">Submit</a>
+           </div>    
+        </form>
+    </div>
+    
+    <footer>
+        <p>Fisnik Poroshtica, Copyright &copy; 2017</p>
+    </footer>
+    
+     <script
+          src="https://code.jquery.com/jquery-3.2.1.js"
+          integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+          crossorigin="anonymous">
+    </script>
+    <script>
+        
+        window.sr = ScrollReveal();
+        sr.reveal('.showcase', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        
+        sr.reveal('.brand', {
+            duration: 2000,
+            origin: 'top'
+        });
+        
+        sr.reveal('.boxes', {
+            duration: 3000,
+            origin: 'bottom'
+        });
+        
+         sr.reveal('#offers', {
+            duration: 3000,
+            origin: 'right'
+        });
+        
+        sr.reveal('#box1', {
+            duration: 3000,
+            origin: 'left'
+        });
+        
+        sr.reveal('#box2', {
+            duration: 3000,
+            origin: 'right'
+        });
+        
+        sr.reveal('.form', {
+            duration: 3000,
+            origin: 'bottom'
+        });
+        
+    </script>    
+    <script>
+        $(function() {
+          // Smooth Scrolling
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    </script> 
+</body>
+</html>

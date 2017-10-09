@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+/******************  Header ******************/
+
+#header{
+    height: 100vh;
+    background:  url('../img/img1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background: #34495E;
+    width: 99vw;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 9px 6px rgba(0,0,0,0.5);
+    opacity: 0.8;
+}
+
+nav:hover {
+    opacity: 1;
+    transition: 1.4s;
+}
+
+nav ul {
+    color: #ddd;
+    display: inline;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+    display: inline;
+    padding-top: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px #F62459 solid;
+    padding-bottom: 3px;
+    transition: 0.7s;
+}
+
+
+
+.menu {
+    float: right;
+    padding-right: 10px;
+   
+}
+
+.brand {
+    float: left;
+    margin-left: 40px;
+    color: #ddd;
+}
+
+.brand span {
+    color: #F62459;
+    font-weight: bolder;
+}
+
+
+/******************  Showcase ******************/
+
+.showcase {
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    border: none;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#welcome {
+    color: #fff;
+    font-size: 6em;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+}
+
+.showcase p {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.showcase a {
+    font-size: 60px;
+    color: #F62459;
+    padding: 2px 50px;
+    text-transform: uppercase;
+}
+
+.showcase a:hover {
+    color: #aaa;
+    transition: 1s;
+    }
+
+
+/****************** Section-1 ******************/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boxes {
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    margin-top: 50px;
+    padding: 10px;
+    color: #444;
+}
+
+.boxes:hover{
+    color: #111;
+}
+
+.boxes i {
+    font-size: 100px;
+}
+
+/******************  Setion-2 ******************/
+
+.section-2 {
+    background: url('../img/image2.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 60vh;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.section-2 h1 {
+    color: #fff;
+    font-size: 6rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+
+/******************  Section 3 ******************/
+
+.section-3 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.boxes2{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes2 h3 {
+    font-size: 30px
+}
+
+.boxes2 p {
+    font-size: 25px;
+}
+
+.box-bottom-1 {
+    background: #264348;
+    color: #fff;
+    margin: 0;
+}
+
+.box-bottom-2 {
+    background: #F62459;
+    color: #fff;
+    margin: 0;
+}
+
+/******************  Contact ******************/
+
+.contact {
+    background: url('../img/img3.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.form {
+    background: rgba(255,255,255, 0.4);
+    padding: 20px 80px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form label  {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form input, .form textarea {
+    padding: 10px;
+    border: none;
+    background: #34495E;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.btn {
+    background: #34495E;
+    padding: 7px 20px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #34495E;
+}
+
+
+/******************  Footer ******************/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #F62459;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+
+/************ Media Queries ****************/
+
+
+@media(max-width: 1000px){
+    .showcase {
+       left: 20vh
+    }
+    
+    .section-3 {
+        flex-direction: column;
+    }
+    
+    .boxes,
+    .boxes2{
+        width: 100%;
+    }
+     .section-2 h1{
+        font-size: 70px;
+        left: 30px;
+    }
+}
+
+
+
+
+
+
+@media(max-width: 650px){
+    nav {
+        height: 80px;
+        text-align: center;
+        padding: 10px;
+    }
+    .brand { 
+        width: 100%;
+        padding-top: 1px;
+        padding-bottom: 10px;
+        margin-left: 0;
+    }
+    
+    .menu {
+        padding-top: 2px;
+        float: none;
+    }
+    
+    .showcase {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    
+    #welcome {
+        font-size: 55px;
+    }
+    
+    .showcase p {
+        font-size: 17px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .section-2 h1{
+        font-size: 60px;
+        left: 30px;
+    }
+    
+    .contact {
+        height: 100vh;
+    }
+    
+    .form input, .form textarea { 
+        font-size: 15px;
+    }
+    
+}
